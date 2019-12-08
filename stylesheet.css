@@ -1,0 +1,147 @@
+/* header全体の設定*/
+header {
+  background-color: rgb(218, 200, 191);
+  text-align: center;
+}
+
+/* headerの画像の設定*/
+header img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* トリミングの際に比率を保たせる*/
+  object-position: 50% 0%; /* トリミング内の位置を調整。中に ,はつけない*/
+}
+
+/* headerのh1の設定*/
+header h1 {
+  margin: 0;
+}
+
+/* headerのp(大学４年生)の設定*/
+header p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* profile(プロフィールの設定)*/
+.profile {
+  background-color: rgb(200, 200, 191);
+  border-top: solid 1px black;
+}
+
+/* 見出し*/
+.profile > h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* 各セクションで共通する設定*/
+.profile section {
+  padding-bottom: 60px;
+}
+
+.profile img {
+  width: 300px;
+}
+
+/*大学のテキスト部分の配置*/
+.profile .university {
+  margin-left: 30px;
+  padding-top: 30px;
+}
+
+/*シンガポールのテキスト部分の配置*/
+.profile .singapore {
+  margin-left: 30px;
+}
+
+/* サークルのテキスト部分の配置*/
+.profile .circle {
+  margin-left: 30px;
+}
+
+/* 好きなアニメリストの設定*/
+.anime {
+  background-color: rgb(210, 200, 191);
+  border-top: solid 1px black;
+}
+
+
+/* 見出し部分の設定*/
+.anime > h1 {
+  text-align: center;
+  padding-bottom: 32px;
+  font-weight: normal;
+}
+
+/* リスト全体の設定*/
+.anime ul {
+  text-align: center;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* 各リストの設定*/
+.anime li {
+  padding-bottom: 64px;
+  display: inline-block;
+}
+
+
+/* アニメの画像の設定*/
+.anime img {
+  width: 200px;
+}
+
+/*アニメの見出しの余白をなくす*/
+.anime h2 {
+  margin: 0px;
+}
+
+/* お問い合わせの設定*/
+.contact {
+  text-align: center;
+  background: rgb(198, 200, 191);
+  padding: 32px;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+
+.contact h1 {
+  margin: 25px;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  color: #98969c;
+  padding: 32px;
+}
+
+@media (min-width: 900px) {
+
+  .profile section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+
+  .anime ul {
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .anime li {
+      width: 250px;
+      text-align: center;
+  }
+}
